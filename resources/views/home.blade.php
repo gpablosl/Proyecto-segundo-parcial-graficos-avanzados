@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-sm mt-5" style="width: 80%">
+        <button type="button" class="btn btn-primary" style="width: 20%">Inicio</button>
+
+        <div class="container-sd text-center">
+            <div class="row">
+                <div class="col mt-2">
+                    <button type="button" class="btn btn-warning" style="width: 100%">Administrar peliculas</button>
+                </div>
+                <div class="col mt-2">
+                    <button type="button" class="btn btn-warning" style="width: 100%">Administrar proyecciones</button>
+                </div>
+                <div class="col mt-2">
+                    <button type="button" class="btn btn-warning" style="width: 100%">Administrar generos</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sd">
+            <h1>Historial de proyecciones</h1>
+            <p>
+                <h4>Semana: </h4>
+                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  ((SemanaActual))
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    20/2/23 - 26/2/23
+                </div>
+                <div class="card card-body">
+                    13/2/23 - 19/2/23
+                </div>
+                <div class="card card-body">
+                    6/2/23 - 12/2/23
+                </div>
+                <div class="card card-body">
+                    30/1/23 - 7/2/23
+                </div>
+                <div class="card card-body">
+                    23/1/23 - 30/1/23
+                </div>
+              </div>
+
+              <table class="table table-hover"> 
+        <thead>
+            <tr>
+                <th> Nombre</th>
+                <th>Acciones</th>
+            </tr>
+            <tbody>
+                @foreach($peliculas as $pelicula)
+                <tr>
+                    <td>{{$pelicula->titulo}}</td>
+                    <td>{{$pelicula->anio}}</td>
+                    <td>{{$pelicula->duracion}}</td>
+                    <td>{{$pelicula->poster}}</td>
+                    <td>{{$pelicula->director}}</td>
+
+                    <td>
+                        <a class="btn btn-primary btn-sm" ><i class="fa fa-edit"></i></a>
+                        <a class="btn btn-danger btn-sm" ><i class="fa fa-times"></i></a>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+            
+        </thead>
+    </table>
+
+              <div class="row bg-dark text-white mt-2">
+                    <div class="col-4 mt-2">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/sw5.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+        
+                    <div class="col mt-2">
+                        <div class="row">
+                            <h1>Star wars Episodio V</h1>
+                        </div>
+                        <div class="row">
+                            <h4>Año: 1980</h4>
+                        </div>
+                        <div class="row">
+                            <h4>Proyección: 10/2/2023</h4>
+                        </div>
+                        <div class="row">
+                            <h4>Hora: 8:30 PM</h4>
+                        </div>
+                        <div class="row">
+                            <h4>Duración: 2h4m</h4>
+                        </div>
+                        <div class="row">
+                            <h4>Géneros: Acciòn, Aventura, Ciencia Ficciòn, Fantasia</h4>
+                        </div>
+                        <div class="row">
+                            <h4>Director: Irvin Kershner</h4>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+
