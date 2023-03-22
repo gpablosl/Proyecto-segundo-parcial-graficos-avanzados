@@ -15,9 +15,8 @@ use App\Http\Controllers\PeliculasController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 //>
 
-Route::get('/home', [PeliculasController::class,'home']);
+Route::get('/', [PeliculasController::class,'home']);
+
+Route::get('/administrarPeliculas', [PeliculasController::class,'administrarPeliculas']);

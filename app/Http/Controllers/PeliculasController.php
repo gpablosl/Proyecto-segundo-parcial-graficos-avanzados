@@ -15,4 +15,13 @@ class PeliculasController extends Controller
 
         return view('home',$argumentos);
     }
+
+    public function administrarPeliculas() {
+        $peliculas = Pelicula::all();
+
+        $argumentos = array();
+        $argumentos['peliculas'] = $peliculas;
+
+        return view('administrarPeliculas',$argumentos);
+    }
 }

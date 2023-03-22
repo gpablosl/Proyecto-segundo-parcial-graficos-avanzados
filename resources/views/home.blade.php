@@ -50,60 +50,41 @@
                 </div>
               </div>
 
-              <table class="table table-hover"> 
-        <thead>
-            <tr>
-                <th> Nombre</th>
-                <th>Acciones</th>
-            </tr>
+
             <tbody>
                 @foreach($peliculas as $pelicula)
-                <tr>
-                    <td>{{$pelicula->titulo}}</td>
-                    <td>{{$pelicula->anio}}</td>
-                    <td>{{$pelicula->duracion}}</td>
-                    <td>{{$pelicula->poster}}</td>
-                    <td>{{$pelicula->director}}</td>
 
-                    <td>
-                        <a class="btn btn-primary btn-sm" ><i class="fa fa-edit"></i></a>
-                        <a class="btn btn-danger btn-sm" ><i class="fa fa-times"></i></a>
-                    </td>
-                </tr>
                 @endforeach
             </tbody>
             
-        </thead>
-    </table>
-
               <div class="row bg-dark text-white mt-2">
                     <div class="col-4 mt-2">
                         <div class="card" style="width: 18rem;">
-                            <img src="img/sw5.png" class="card-img-top" alt="...">
+                            <img src="img/{{$pelicula->poster}}" class="card-img-top" alt="...">
                         </div>
                     </div>
         
                     <div class="col mt-2">
                         <div class="row">
-                            <h1>Star wars Episodio V</h1>
+                            <h1>{{$pelicula->titulo}}</h1>
                         </div>
                         <div class="row">
-                            <h4>Año: 1980</h4>
+                            <h4>Año: {{$pelicula->anio}}</h4>
                         </div>
                         <div class="row">
-                            <h4>Proyección: 10/2/2023</h4>
+                            <h4>Proyección: -----</h4>
                         </div>
                         <div class="row">
-                            <h4>Hora: 8:30 PM</h4>
+                            <h4>Hora: ---</h4>
                         </div>
                         <div class="row">
-                            <h4>Duración: 2h4m</h4>
+                            <h4>Duración: {{$pelicula->duracion_minutos}}</h4>
                         </div>
                         <div class="row">
-                            <h4>Géneros: Acciòn, Aventura, Ciencia Ficciòn, Fantasia</h4>
+                            <h4>Géneros: ----</h4>
                         </div>
                         <div class="row">
-                            <h4>Director: Irvin Kershner</h4>
+                            <h4>Director: {{$pelicula->director}}</h4>
                         </div>
                     </div>
             </div>
