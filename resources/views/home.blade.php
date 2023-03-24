@@ -25,32 +25,7 @@
         </div>
 
         <div class="container-sd">
-            <h1>Historial de proyecciones</h1>
-            <p>
-                <h4>Semana: </h4>
-                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  ((SemanaActual))
-                </a>
-              </p>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    20/2/23 - 26/2/23
-                </div>
-                <div class="card card-body">
-                    13/2/23 - 19/2/23
-                </div>
-                <div class="card card-body">
-                    6/2/23 - 12/2/23
-                </div>
-                <div class="card card-body">
-                    30/1/23 - 7/2/23
-                </div>
-                <div class="card card-body">
-                    23/1/23 - 30/1/23
-                </div>
-              </div>
-
-
+        
             <tbody>
                 @foreach($peliculas as $pelicula)
 

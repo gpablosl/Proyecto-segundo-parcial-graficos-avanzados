@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 15-03-2023 a las 21:10:09
+-- Tiempo de generación: 24-03-2023 a las 21:41:38
 -- Versión del servidor: 5.7.39
 -- Versión de PHP: 7.4.33
 
@@ -101,7 +101,8 @@ CREATE TABLE `peliculas` (
 --
 
 INSERT INTO `peliculas` (`id`, `titulo`, `anio`, `poster`, `duracion_minutos`, `director`) VALUES
-(1, 'Star Wars: Episodio. V', 1980, 'poster_placeholder.png', 124, 'Irvin Kershner');
+(1, 'Star Wars: Episodio V', 1980, 'sw5.png', 124, 'Irvin Kershner'),
+(2, 'Blade Runner', 1982, 'bladerunner.png', 117, 'Ridley Scott');
 
 -- --------------------------------------------------------
 
@@ -206,7 +207,7 @@ ALTER TABLE `generos`
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `tipos_usuario`

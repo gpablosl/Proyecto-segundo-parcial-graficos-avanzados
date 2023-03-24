@@ -20,3 +20,5 @@ use App\Http\Controllers\PeliculasController;
 Route::get('/', [PeliculasController::class,'home']);
 
 Route::get('/administrarPeliculas', [PeliculasController::class,'administrarPeliculas']);
+
+Route::get('/añadirProyecciones', [PeliculasController::class,'añadirProyecciones']);
