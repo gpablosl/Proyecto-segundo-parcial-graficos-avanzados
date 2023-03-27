@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 24-03-2023 a las 21:41:38
+-- Tiempo de generación: 27-03-2023 a las 21:06:24
 -- Versión del servidor: 5.7.39
 -- Versión de PHP: 7.4.33
 
@@ -40,7 +40,8 @@ CREATE TABLE `funciones` (
 --
 
 INSERT INTO `funciones` (`id`, `id_pelicula`, `id_usuario`, `hora`, `fecha`) VALUES
-(1, 1, 1, '17:00:00', '2023-03-25');
+(1, 1, 1, '17:00:00', '2023-03-25'),
+(2, 2, 1, '16:00:00', '2023-03-12');
 
 -- --------------------------------------------------------
 
@@ -195,7 +196,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `funciones`
 --
 ALTER TABLE `funciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `generos`
