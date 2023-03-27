@@ -9,12 +9,13 @@
   </head>
   <body>
     <div class="container mt-3" style="width: 80%">
-        <button type="button" class="btn btn-primary" style="width: 20%">Inicio</button>
+        <a class="btn btn-primary" style="width: 20%" href="/">Inicio</a>
 
         <div class="row mt-2 ">
           <h1>Administrar películas</h1>
           <div class="col-4 mt-3">
-            <a href="#" class="btn btn-primary">Añadir peliculas</a>
+            <a href="añadirPeliculas" class="btn btn-primary">Añadir peliculas</a>
+
           </div>
         </div>
 

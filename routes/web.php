@@ -22,3 +22,12 @@ Route::get('/', [PeliculasController::class,'home']);
 Route::get('/administrarPeliculas', [PeliculasController::class,'administrarPeliculas']);
 
 Route::get('/añadirProyecciones', [PeliculasController::class,'añadirProyecciones']);
+
+Route::get('/añadirPeliculas', [PeliculasController::class,'añadirPeliculas']);
+
+Route::get('/editarPeliculas', [PeliculasController::class,'editarPeliculas']);
+
+Route::get('/generos', [PeliculasController::class,'generos']);
+
+Route::get('/login', [PeliculasController::class,'login']);
+

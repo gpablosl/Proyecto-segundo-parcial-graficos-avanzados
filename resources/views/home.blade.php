@@ -13,13 +13,13 @@
         <div class="container-sd text-center">
             <div class="row">
                 <div class="col mt-2">
-                    <button type="button" class="btn btn-warning" style="width: 100%">Administrar peliculas</button>
+                <a class="btn btn-warning" style="width: 100%" href="administrarPeliculas">Administrar Peliculas</a>
                 </div>
                 <div class="col mt-2">
-                    <button type="button" class="btn btn-warning" style="width: 100%">Administrar proyecciones</button>
+                <a class="btn btn-warning" style="width: 100%" href="añadirPeliculas">Administrar Proyecciones</a>
                 </div>
                 <div class="col mt-2">
-                    <button type="button" class="btn btn-warning" style="width: 100%">Administrar generos</button>
+                <a class="btn btn-warning" style="width: 100%" href="generos">Administrar generos</a>
                 </div>
             </div>
         </div>
@@ -47,16 +47,16 @@
                             <h4>Año: {{$pelicula->anio}}</h4>
                         </div>
                         <div class="row">
-                            <h4>Proyección: -----</h4>
+                            <h4>Proyección: 12/03/23</h4>
                         </div>
                         <div class="row">
-                            <h4>Hora: ---</h4>
+                            <h4>Hora: 16:00</h4>
                         </div>
                         <div class="row">
                             <h4>Duración: {{$pelicula->duracion_minutos}}</h4>
                         </div>
                         <div class="row">
-                            <h4>Géneros: ----</h4>
+                            <h4>Géneros: Acción</h4>
                         </div>
                         <div class="row">
                             <h4>Director: {{$pelicula->director}}</h4>

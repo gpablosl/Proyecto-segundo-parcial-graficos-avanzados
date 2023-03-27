@@ -26,12 +26,39 @@ class PeliculasController extends Controller
         return view('administrarPeliculas',$argumentos);
     }
 
-    public function añadirProyecciones() {
+    public function añadirPeliculas() {
         $funciones = Funcion::all();
 
         $argumentos = array();
         $argumentos['funciones'] = $funciones;
 
-        return view('añadirProyecciones',$argumentos);
+        return view('añadirPeliculas',$argumentos);
+    }
+
+    public function editarPeliculas() {
+        $funciones = Funcion::all();
+
+        $argumentos = array();
+        $argumentos['funciones'] = $funciones;
+
+        return view('editarPeliculas',$argumentos);
+    }
+
+    public function generos() {
+        $funciones = Funcion::all();
+
+        $argumentos = array();
+        $argumentos['funciones'] = $funciones;
+
+        return view('generos',$argumentos);
+    }
+
+    public function login() {
+        $funciones = Funcion::all();
+
+        $argumentos = array();
+        $argumentos['funciones'] = $funciones;
+
+        return view('login',$argumentos);
     }
 }
